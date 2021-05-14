@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./tdcli -s ./bot.lua -p apimode --bot=1846248575:AAESnYnWZC2cnhMGL9ammmUqL5BoeLoXTm4
+./tdcli -s ./bot.lua -p apimode --bot=759584661:AAHbzZeHgfOPDxVVG2WNBwj1noP2K64NQ3M

@@ -1,4 +1,4 @@
--- Start Tesla Bot | By @iranize_link | Team @iranize_link
+-- Start LuRa Bot | By @iranize_link | Team @iranize_link
 
 URL = require "socket.url"
 http = require "socket.http"
@@ -840,7 +840,7 @@ local text1 =[[
 🔹 برای استفاده از تسلا لطفا ربات را در گروه خود Import کنید 😁
 🔸 https://t.me/TESLA_ANTISPAM_BOT?startgroup=add
 -----------------------------------------
-▫️Welcome To Tesla▫️
+▫️Welcome To LuRa▫️
 🔹For Use Robot Please Import Bot To Your Group
 🔸 https://t.me/TESLA_ANTISPAM_BOT?startgroup=add
 
@@ -851,7 +851,7 @@ local text1 =[[
 همچنین دستور راهنمای ربات دستور زیر است
 `تسلا راهنماییم کن`
 
-♦️Creator @Refigh_heh
+♦️Creator @refigh_heh
 ♦️Channel @iranize_link
 ]]
 sendMessage(msg.chat_id,msg.id,1,text1,1,"html")
@@ -996,19 +996,19 @@ if text:match("^لایک (.*)$") and is_JoinChannel(msg) and CMD then
 local input = {
 string.match(text, "لایک (.*)$")
 } 
-local function Tesla(arg, data)
+local function LuRa(arg, data)
 sendInlineQueryResultMessage(msg.chat_id, msg.id, 0, 1, data.inline_query_id, data.results[0].id)
 end
-getInlineQueryResults(190601014, msg.chat_id, 0, 0, input[1], 0, Tesla, nil)
+getInlineQueryResults(190601014, msg.chat_id, 0, 0, input[1], 0, LuRa, nil)
 end
 if text:match("^اهنگ (.*)$") and is_JoinChannel(msg) and CMD then
 local input = {
 string.match(text, "اهنگ (.*)$")
 } 
-local function Tesla(arg, data)
+local function LuRa(arg, data)
 sendInlineQueryResultMessage(msg.chat_id, msg.id, 0, 1, data.inline_query_id, data.results[0].id)
 end
-getInlineQueryResults(117678843, msg.chat_id, 0, 0, input[1], 0, Tesla, nil)
+getInlineQueryResults(117678843, msg.chat_id, 0, 0, input[1], 0, LuRa, nil)
 end
 ]]
 --if text:match("test") then
@@ -1285,7 +1285,7 @@ sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 end
 elseif text:match("^تسلا بچه کجام$") and is_JoinChannel(msg) and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
-res = http.request('https://abolfazl.senatorhost.com/TeslaApi/koja.php')
+res = http.request('https://abolfazl.senatorhost.com/LuRaApi/koja.php')
 sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 else
 res = http.request('https://abolfazl.senatorhost.com/Api/Kojam.php	.php')
@@ -1293,7 +1293,7 @@ sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 end
 elseif text:match("^تسلا زنم چطوریه$") and is_JoinChannel(msg) and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
-res = http.request('https://abolfazl.senatorhost.com/TeslaApi/Zan.php')
+res = http.request('https://abolfazl.senatorhost.com/LuRaApi/Zan.php')
 sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 else
 res = http.request('https://abolfazl.senatorhost.com/Api/Zan.php')
@@ -1301,7 +1301,7 @@ sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 end
 elseif text:match("^تسلا شوهرم کیه$") and is_JoinChannel(msg) and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
-res = http.request('https://abolfazl.senatorhost.com/TeslaApi/shohar.php')
+res = http.request('https://abolfazl.senatorhost.com/LuRaApi/shohar.php')
 sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 else
 res = http.request('https://abolfazl.senatorhost.com/Api/Mard.php')
@@ -1309,7 +1309,7 @@ sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 end
 elseif text:match("^تسلا چطوری میمیرم$") and is_JoinChannel(msg) and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
-res = http.request('https://abolfazl.senatorhost.com/TeslaApi/marg.php')
+res = http.request('https://abolfazl.senatorhost.com/LuRaApi/marg.php')
 sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 else
 res = http.request('https://abolfazl.senatorhost.com/Api/Marg.php')
@@ -1317,7 +1317,7 @@ sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 end
 elseif text:match("^تسلا چطوری خودمو بکشم$") and is_JoinChannel(msg) and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
-res = http.request('https://abolfazl.senatorhost.com/TeslaApi/khodkoshi.php')
+res = http.request('https://abolfazl.senatorhost.com/LuRaApi/khodkoshi.php')
 sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 else
 res = http.request('http://abolfazl.senatorhost.com/Api/Khodkoshi.php')
@@ -1325,7 +1325,7 @@ sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 end
 elseif text:match("^تسلا بچم چیه$") and is_JoinChannel(msg) and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
-res = http.request('https://abolfazl.senatorhost.com/TeslaApi/bache.php')
+res = http.request('https://abolfazl.senatorhost.com/LuRaApi/bache.php')
 sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 else
 res = http.request('https://abolfazl.senatorhost.com/Api/Bache.php')
@@ -1333,7 +1333,7 @@ sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 end
 elseif text:match("^تسلا ماشینم چیه$") and is_JoinChannel(msg) and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
-res = http.request('https://abolfazl.senatorhost.com/TeslaApi/car.php')
+res = http.request('https://abolfazl.senatorhost.com/LuRaApi/car.php')
 sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 else
 res = http.request('https://abolfazl.senatorhost.com/Api/Mashin.php')
@@ -1341,10 +1341,10 @@ sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 end
 elseif text:match("^تسلا$") and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
-res = http.request('https://abolfazl.senatorhost.com/TeslaApi/Robot.php')
+res = http.request('https://abolfazl.senatorhost.com/LuRaApi/Robot.php')
 sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 else
-res = http.request('https://abolfazl.senatorhost.com/Api/Tesla.php')
+res = http.request('https://abolfazl.senatorhost.com/Api/Lura.php')
 sendMessage(msg.chat_id,msg.id, 1,res, 1, 'md')
 end
 elseif text:match("^اموجی (.*)$") and is_JoinChannel(msg) and CMD then
@@ -1375,11 +1375,11 @@ end
 elseif text:match("^ریلود$") and is_sudo(msg)then
 dofile('./bot.lua')
 sendMessage(msg.chat_id, msg.id,1, "بات با موفقیت راه اندازی شد",1, "html")
-elseif text:match("^Tesla$") then
+elseif text:match("^lura$") then
 local text = [[
 ♦️HI♦️
 
-🍃I'm Tesla 
+🍃I'm LuRa 
 
 🎋Made By @iranize_link 🔹
 
@@ -1723,7 +1723,7 @@ local text2 = [[
 🍂 `لوگو [1تا80] name`
 📍 برای ساخت لوگو اسم شما
 ❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
-🍃 `Tesla`
+🍃 `lura`
 📍 برای دریافت سازنده ربات
 ❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
 
@@ -1845,7 +1845,7 @@ local text22 = [[
 🍂 `لوگو [1تا80] name`
 📍 برای ساخت لوگوکیری از اسم تخمی
 ❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
-🍃 `Tesla`
+🍃 `lura`
 📍 دریافت کصخلی ک منوساخته کیه
 ❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
 ]]
@@ -1894,11 +1894,7 @@ local jdat = jsons:decode(url)
 sendMessage(msg.chat_id,msg.id, 1,"`مناسبت های امروز` \n\n`مناسبت های میلادی:`\n"..jdat.miladi.."\n`مناسبت های شمسی:`\n"..jdat.shamsi.."\n`مناسبت های قمری:`\n"..jdat.ghamari, 1, 'md')
 end
 -- Arz
-if text:match("^تسلا نرخ ارز$") and is_JoinChannel(msg) and CMD then
-local url = https.request("https://api.world-team.ir/money/")
-local jdat = jsons:decode(url)
-sendMessage(msg.chat_id,msg.id,1,"نرخ ارز\n💰قیمت خرید دلار:"..jdat.buy_usd.price.."\n💰قیمت فروش دلار:"..jdat.sell_usd.price.."\n〰️〰️〰️〰️〰️〰️\n💰قیمت خرید یورو :"..jdat.buy_eur.price.."\n💰قیمت فروش یورو : "..jdat.sell_eur.price.."\n@iranize_link",1,'md')
-end
+
 -- Traffick
 
 if text:match("^تسلا وضعیت ترافیک (.*)$") and is_JoinChannel(msg) and CMD then
@@ -2945,7 +2941,7 @@ end
 end
 ------------------AI----------------
 --Salam
-if text:match("^تسلا سلام$") or text:match("^تسلاسلام$") or text:match("^سلام تسلا$") or text:match("^salam Tesla$")or text:match("^slm Tesla$")or text:match("^slm$")or text:match("^Tesla slm$")or text:match("^Tesla salam$")and CMD then
+if text:match("^تسلا سلام$") or text:match("^تسلاسلام$") or text:match("^سلام تسلا$") or text:match("^salam lura$")or text:match("^slm lura$")or text:match("^slm$")or text:match("^lura slm$")or text:match("^lura salam$")and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
 local datebase ={
 "سلام عزیزم",
@@ -2967,7 +2963,7 @@ sendMessage(msg.chat_id, 0, 1,datebase[math.random(#datebase)], 1, "html")
 end
 end
 --Khobi
-if text:match("^تسلا خوبی$") or text:match("^تسلا خوبی؟$") or text:match("^خوبی تسلا$") or text:match("^خوبی تسلا؟$") or text:match("^khobi Tesla$") or text:match("^khobi Tesla?$")or text:match("^Tesla khobi?$")or text:match("^khobi$")or text:match("^Tesla khobi$")and CMD then
+if text:match("^تسلا خوبی$") or text:match("^تسلا خوبی؟$") or text:match("^خوبی تسلا$") or text:match("^خوبی تسلا؟$") or text:match("^khobi lura$") or text:match("^khobi lura?$")or text:match("^lura khobi?$")or text:match("^khobi$")or text:match("^lura khobi$")and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
 local datebase ={
 "مرسی من خوبم تو خوبی؟",
@@ -2988,7 +2984,7 @@ local datebase ={
 sendMessage(msg.chat_id, 0, 1,datebase[math.random(#datebase)], 1, "html")
 end
 end
-if text:match("^تسلا چه خبرا$") or text:match("^تسلا چه خبر$") or text:match("^تسلا چه خبرا؟$") or text:match("^تسلا چه خبر؟$") or text:match("^چه خبرا تسلا$") or text:match("^چه خبرا تسلا$")or text:match("^Tesla che khabar$")or text:match("che khabar Tesla$")or text:match("^che khabara Tesla$") or text:match("^تسلا چ خبرا؟؟$")and CMD then
+if text:match("^تسلا چه خبرا$") or text:match("^تسلا چه خبر$") or text:match("^تسلا چه خبرا؟$") or text:match("^تسلا چه خبر؟$") or text:match("^چه خبرا تسلا$") or text:match("^چه خبرا تسلا$")or text:match("^lura che khabar$")or text:match("che khabar lura$")or text:match("^che khabara lura$") or text:match("^تسلا چ خبرا؟؟$")and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
 local datebase ={
 "هعی میگذره تو چه خبر",
@@ -3009,7 +3005,7 @@ local datebase ={
 sendMessage(msg.chat_id, 0, 1,datebase[math.random(#datebase)], 1, "html")
 end
 end
-if text:match("^تسلا حالت چطوره$") or text:match("^تسلا حالت چطوره؟$") or text:match("^حالت چطوره تسلا$") or text:match("^حالت چطوره تسلا؟$") or text:match("^Tesla halet chetore?$") or text:match("^Tesla halet chetore$")or text:match("^chetore halet Tesla$")or text:match("chetore halet Tesla?$")and CMD then
+if text:match("^تسلا حالت چطوره$") or text:match("^تسلا حالت چطوره؟$") or text:match("^حالت چطوره تسلا$") or text:match("^حالت چطوره تسلا؟$") or text:match("^lura halet chetore?$") or text:match("^lura halet chetore$")or text:match("^chetore halet lura$")or text:match("chetore halet lura?$")and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
 local datebase ={
 "عالی عالی 😊😊",
@@ -3029,7 +3025,7 @@ local datebase ={
 sendMessage(msg.chat_id, 0, 1,datebase[math.random(#datebase)], 1, "html")
 end
 end
-if text:match("^تسلا بساک$") or text:match("^تسلا کون بده$") or text:match("^تسلا کص بده$") or text:match("^تسلا کس بده$") or text:match("^تسلا بکنمت$") or text:match("^تسلا گاییدمت$")or text:match("^تسلا کص ننت")or text:match("تسلا کیرم دهنت$") or text:match("^تسلا میخاری$") or text:match("^تسلا کیری$")or text:match("^تسلا جاکشی$")or text:match("^کیرم دهنت تسلا$")or text:match("^کص بده تسلا$")or text:match("^تسلا ممه بده$")or text:match("^ممه بده تسلا$")or text:match("^بکنمت تسلا$")or text:match("^بساک تسلا$")or text:match("^besak Tesla$")or text:match("^besac Tesla$")or text:match("^Tesla besak$")or text:match("^Tesla besac$")or text:match("^kir tot Tesla$")or text:match("^Tesla kir tot$")or text:match("^Tesla kos nnt$")or text:match("^Tesla kos nanat$")or text:match("^kos nanat Tesla$")or text:match("^kos nnt Tesla$")or text:match("^Tesla kiram dahanet$")or text:match("^kiram dahanet Tesla$")or text:match("^bokonamet Tesla$")or text:match("^Tesla bokonamet$")or text:match("^تسلا خارتو$") or text:match("^خارتو تسلا$") or text:match("^تسلا کص بده$") or text:match("^تسلا گاییده شدی$") or text:match("^تسلا بپا نگامت$") or text:match("^تسلا گاییدمت$")or text:match("^تسلا مادرتو$")or text:match("^تسلا حرومزاده$") or text:match("^تسلا بده بکنیم$") or text:match("تسلا ی جیندا بیار") or text:match("^تسلا کیر میخوری$") or text:match("^تسلا هدشو بگیر$") and CMD then
+if text:match("^تسلا بساک$") or text:match("^تسلا کون بده$") or text:match("^تسلا کص بده$") or text:match("^تسلا کس بده$") or text:match("^تسلا بکنمت$") or text:match("^تسلا گاییدمت$")or text:match("^تسلا کص ننت")or text:match("تسلا کیرم دهنت$") or text:match("^تسلا میخاری$") or text:match("^تسلا کیری$")or text:match("^تسلا جاکشی$")or text:match("^کیرم دهنت تسلا$")or text:match("^کص بده تسلا$")or text:match("^تسلا ممه بده$")or text:match("^ممه بده تسلا$")or text:match("^بکنمت تسلا$")or text:match("^بساک تسلا$")or text:match("^besak lura$")or text:match("^besac lura$")or text:match("^lura besak$")or text:match("^lura besac$")or text:match("^kir tot lura$")or text:match("^lura kir tot$")or text:match("^lura kos nnt$")or text:match("^lura kos nanat$")or text:match("^kos nanat lura$")or text:match("^kos nnt lura$")or text:match("^lura kiram dahanet$")or text:match("^kiram dahanet lura$")or text:match("^bokonamet lura$")or text:match("^lura bokonamet$")or text:match("^تسلا خارتو$") or text:match("^خارتو تسلا$") or text:match("^تسلا کص بده$") or text:match("^تسلا گاییده شدی$") or text:match("^تسلا بپا نگامت$") or text:match("^تسلا گاییدمت$")or text:match("^تسلا مادرتو$")or text:match("^تسلا حرومزاده$") or text:match("^تسلا بده بکنیم$") or text:match("تسلا ی جیندا بیار") or text:match("^تسلا کیر میخوری$") or text:match("^تسلا هدشو بگیر$") and CMD then
 if redis:get("bot:ans"..msg.chat_id) == nil then
 local datebase ={
 "هاجی من رباتم خیلی بیشوری ک همچین چیزایی بمن میگی 😕الحق مادر پدرت بهت شعور یاد ندادن احمق بی ادب😒",
@@ -3144,16 +3140,16 @@ end
 end
 if text:match("^تسلا بگوز$") or text:match("^بگوز تسلا$")and CMD then
 local datebase ={
-"/home/Tesla/td/goz/goz1.ogg",
-"/home/Tesla/td/goz/goz2.ogg",
-"/home/Tesla/td/goz/goz3.ogg",
-"/home/Tesla/td/goz/goz4.ogg",
-"/home/Tesla/td/goz/goz5.ogg",
-"/home/Tesla/td/goz/goz6.ogg",
-"/home/Tesla/td/goz/goz7.ogg",
-"/home/Tesla/td/goz/goz8.ogg",
-"/home/Tesla/td/goz/goz9.ogg",
-"/home/Tesla/td/goz/goz10.ogg"
+"/home/lura/td/goz/goz1.ogg",
+"/home/lura/td/goz/goz2.ogg",
+"/home/lura/td/goz/goz3.ogg",
+"/home/lura/td/goz/goz4.ogg",
+"/home/lura/td/goz/goz5.ogg",
+"/home/lura/td/goz/goz6.ogg",
+"/home/lura/td/goz/goz7.ogg",
+"/home/lura/td/goz/goz8.ogg",
+"/home/lura/td/goz/goz9.ogg",
+"/home/lura/td/goz/goz10.ogg"
 }
 local file = datebase[math.random(#datebase)]
 sendVoice(msg.chat_id,msg.id,file,0,waveform,"@iranize_link")
@@ -3209,4 +3205,4 @@ assert (tdbot_function ({_="getChats",offset_order="9223372036854775807",offset_
 end
 end
 
--- End Of Tesla Bot
+-- End Of LuRa Bot

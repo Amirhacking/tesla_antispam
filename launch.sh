@@ -51,26 +51,26 @@ echo -e "\e[0m"
 fi
 if [ "$CerNerCompany" = "y" ]
 then
-apt-get update 
-apt-get upgrade
-apt-get install git redis-server lua5.2 liblua5.2-dev lua-lgi libnotify-dev unzip tmux -y && add-apt-repository ppa:ubuntu-toolchain-r/test
-apt-get update 
-apt-get upgrade 
-do-release-upgrade
-apt-get install libconfig++9v5 libstdc++6 
-apt autoremove
-apt-get install gcc-4.9
-apt-get --yes install wget libconfig9 libjansson4 lua5.2 liblua5.2 make unzip git redis-server g++ whois fortune fortunes
-add-apt-repository -y ppa:ubuntu-toolchain-r/test
-apt-get install g++-4.7 -y c++-4.7 -y
-apt-get update
-apt-get upgrade
-apt-get install libreadline-dev -y libconfig-dev -y libssl-dev -y lua5.2 -y liblua5.2-dev -y lua-socket -y lua-sec -y lua-expat -y libevent-dev -y make unzip git redis-server autoconf g++ -y libjansson-dev -y libpython-dev -y expat libexpat1-dev -y
-apt-get install screen -y
-apt-get install tmux -y
-apt-get install libstdc++6 -y
-apt-get install lua-lgi -y
-apt-get install libnotify-dev -y
+sudo apt-get update 
+sudo apt-get upgrade
+sudo apt-get install git redis-server lua5.2 liblua5.2-dev lua-lgi libnotify-dev unzip tmux -y && add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update 
+sudo apt-get upgrade 
+sudo do-release-upgrade
+sudo apt-get install libconfig++9v5 libstdc++6 
+sudo apt autoremove
+sudo apt-get install gcc-4.9
+sudo apt-get --yes install wget libconfig9 libjansson4 lua5.2 liblua5.2 make unzip git redis-server g++ whois fortune fortunes
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+sudo apt-get install g++-4.7 -y c++-4.7 -y
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install libreadline-dev -y libconfig-dev -y libssl-dev -y lua5.2 -y liblua5.2-dev -y lua-socket -y lua-sec -y lua-expat -y libevent-dev -y make unzip git redis-server autoconf g++ -y libjansson-dev -y libpython-dev -y expat libexpat1-dev -y
+sudo apt-get install screen -y
+sudo apt-get install tmux -y
+sudo apt-get install libstdc++6 -y
+sudo apt-get install lua-lgi -y
+sudo apt-get install libnotify-dev -y
 echo -e "\e[1m\e[32m==> \e[97mInstall Packages completed\e[0m"
 
 fi
