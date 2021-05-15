@@ -24,7 +24,10 @@ echo -e "\e[107m                              Configing....                     
 if [ -d "$HOME/$BotH" ];then
 if [ ! -f ./tg ]; then
 wget --progress=bar:force https://valtman.name/files/telegram-bot-180329-nightly-linux 2>&1 | DOVVB
+Wget --no-check-certificate https://valtman.name/files/telegram-bot-180116-nightly-linux
 mv telegram-bot-180329-nightly-linux tg; chmod +x tg
+chmod +x tdbot
+chmod +x td
 
 echo -e "\e[1m\e[97m==> TD successfully downloaded "
 fi
@@ -34,7 +37,7 @@ else
 mkdir $HOME/.telegram-bot; cat <<EOF > $HOME/.telegram-bot/config
 default_profile = "MCP";
 MCP = {
-lua_script = "$HOME/$BotH/bot.lua";
+lua_script = "$HOME/tesla_antispam/bot.lua";
 };
 EOF
 echo -e "\e[1m\e[32m==> \e[97m The file NotFound .. Telegram-Bot\e[0m"
@@ -93,11 +96,11 @@ echo -e "\e[1m\e[32m==> \e[97mGood Lock\e[0m"
 echo -e "\e[1m\e[32m==> \e[97m Good bye\e[0m" 
 }
 function loginCLI() {
-./tg -p MCP --login --phone=${1}
+./td/tdbot -p MCP --login --phone=${1}
 } 
 
-function loginAPI() {
-./tg -p MCP --login --bot=${1}
+loginAPI() {
+./td/tdbot -p MCP --login --bot=${1}
 }
 case $1 in
 l)
